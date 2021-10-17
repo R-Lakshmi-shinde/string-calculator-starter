@@ -3,11 +3,12 @@ package calculator;
 class StringCalculator {
 
     public int add(String input) {
-      if(isEmpty(input))
+        String[] numbers=input.split(",");
+    if(isEmpty(input))
       {
           return 0;
       }
-        return stringToInt(input);
+        return Integer.parseInt(numbers[0] ) + Integer.parseInt(numbers[1]);
     }
     public booleaan isEmpty(string input)
     {
