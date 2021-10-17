@@ -17,4 +17,9 @@ class StringCalculatorShould {
         StringCalculator stringCalculator = new StringCalculator();
         assertEquals(1, stringCalculator.add("1"));
     }
+    @Test
+    public void two_number_comma_delimiter_return_sum()
+    {
+        assertEquals(calculator.calculate("1,2"),3);
+    }
 }
